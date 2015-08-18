@@ -27,6 +27,7 @@ public class BaseKVDAO implements IBaseKV{
 
 	@Override
 	public void findAll() {
+		System.out.println(mongoTemplate);
 		
 	}
 	
