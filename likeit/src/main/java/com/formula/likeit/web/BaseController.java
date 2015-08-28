@@ -1,6 +1,7 @@
 package com.formula.likeit.web;
 
 import java.util.List;
+import java.util.Map;
 
 import javax.annotation.Resource;
 
@@ -23,5 +24,15 @@ public class BaseController {
 			System.out.println(u);
 		}
 		return "demo";
+	}
+	
+	@RequestMapping("/listuser")
+	public String listAllUser(Map<String, Object> model){
+		List<User> userlist = userService.findAll();
+		for(User u : userlist){
+			System.out.println(u);
+			model.put("person", u);
+		}
+		return "listuser";
 	}
 }

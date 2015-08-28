@@ -1,6 +1,7 @@
 package com.formula.likeit.config;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.config.AbstractMongoConfiguration;
 import org.springframework.data.mongodb.core.MongoTemplate;
 
@@ -10,11 +11,11 @@ import com.mongodb.Mongo;
 * Spring MongoDB configuration file
 */
 
-/*@Configuration*/
+@Configuration
 public class SpringMongoConfig extends AbstractMongoConfiguration {
     @Override
     public @Bean Mongo mongo() throws Exception {
-        return new Mongo("localhost",27017);
+        return new Mongo("127.0.0.1",27017);
     }
     @Override
     public @Bean MongoTemplate mongoTemplate() throws Exception {
@@ -22,6 +23,6 @@ public class SpringMongoConfig extends AbstractMongoConfiguration {
     }
 	@Override
 	protected String getDatabaseName() {
-		return null;
+		return "test";
 	}
 }

@@ -1,6 +1,6 @@
 package com.formula.likeit.dao;
 
-public interface IBaseKV {
+public interface IBaseMongo {
 	public void insert();
 	public void findAll();
 }
