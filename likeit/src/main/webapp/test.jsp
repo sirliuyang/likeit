@@ -1,21 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
 
-<html>
-	<head>
-		<meta http-equiv="Content-Type"
-		content="text/html; charset=iso-8859-1">
-		<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
-		<script language="JavaScript1.3" type="text/javascript">
-		function runEERS()
-		{
-			var ns = <%=java.lang.System.getProperty("os.version").indexOf("3.5")%> < 0;
-			document.write(ns);
-		}
-		</script>
-		<script language="JavaScript1.3" type="text/javascript">
-		runEERS()
-		</script>
-	</head>
-	<body>
-		
-	</body>
+    <!-- Bootstrap -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <h1>hello world</h1>
+	<form action="demo" method="get">
+		<input class="btn btn-lg btn-default" type="submit" value="OK">
+	</form>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
