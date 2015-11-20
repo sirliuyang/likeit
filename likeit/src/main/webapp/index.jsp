@@ -21,9 +21,13 @@
 	<header class="main-header"
 		style="background-image: url(http://static.ghostchina.com/image/6/d1/fcb3879e14429d75833a461572e64.jpg)"">
 	</header>
-	<form action="demo" method="get">
+	<form action="demo/user" method="get">
 		<input class="btn btn-lg btn-default" type="submit"
-			value="Test MySQL DAO">
+			value="Get First User">
+	</form>
+	<form action="demo/listuser" method="get">
+		<input class="btn btn-lg btn-default" type="submit"
+			value="List All Users">
 	</form>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
